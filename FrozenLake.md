@@ -13,6 +13,8 @@ Q-öğrenme, makine öğrenmede kullanılan bir Pekiştirmeli Öğrenme tekniği
 ReinQ-Learning için kullanılan formül:
 <img src='https://wikimedia.org/api/rest_v1/media/math/render/svg/9c389edfb9c4342c07a9adad55a3f554a8d2242c' alt='Q-Learning Formül - wikipedia'/>
 
+https://en.wikipedia.org/wiki/Q-learning
+
 
 Önce ajanımızın içinde bulunduğu çevre, hareket kuralları, ödül şartları ve belleğini (Q-Table) hazırlıyoruz.
 
@@ -54,7 +56,6 @@ def oyunu_hazirla():
     # örnek: ajan (x:0,y:0) pozisyonundayken 'R' aksiyonunu alırsa (1,0) yeni pozisyonu (0,0)+(1,0)=(x:1,y:0) olacaktır
     #        (x:1,y:0) pozisyonundayken 'D' aksiyonunu alırsa (0,1) yeni pozisyonu (1,0)+(0,1)=(x:1, y:1) olacaktır.
     hareket_listesi = {'L':(-1,0), 'R':(1,0), 'U':(0,-1), 'D':(0,1)}
-    hareket_listesi_r = dict(zip(hareket_listesi.values(), hareket_listesi.keys()))
     print('Hareketler:\n', hareket_listesi,'\n')
 
     # ************ Q-TABLE **********************
